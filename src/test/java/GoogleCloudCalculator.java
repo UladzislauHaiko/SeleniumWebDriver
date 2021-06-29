@@ -121,7 +121,7 @@ public class GoogleCloudCalculator {
         WebElement estimateBtn = driver.findElement(By.xpath("(//*[@class= 'md-raised md-primary cpc-button md-button md-ink-ripple'])[1]"));
         Thread.sleep(3000);
         estimateBtn.click();
-        Thread.sleep(1000);
+        Thread.sleep(3000);
 
         WebElement vmClassResult = driver.findElement(By.xpath("(//*[@class= 'md-list-item-text ng-binding'])[2]"));
         String vmResult = vmClassResult.getText();
