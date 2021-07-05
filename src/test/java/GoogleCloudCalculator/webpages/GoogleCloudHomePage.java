@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class GoogleCloudHomePage {
     private WebDriver driver;
-    public static String HomePageURL="https://cloud.google.com/";
+    public static String CloudHomePageURL="https://cloud.google.com/";
 
     @FindBy(xpath = "//form[@class='devsite-search-form']")
     public WebElement searchButton;
@@ -18,7 +18,7 @@ public class GoogleCloudHomePage {
 
     public GoogleCloudHomePage (WebDriver driver){
         this.driver=driver;
-        driver.get(HomePageURL);
+        driver.get(CloudHomePageURL);
         PageFactory.initElements(driver,this);
     }
 
